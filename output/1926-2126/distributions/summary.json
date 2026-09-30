@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-30T06:30:32.652902+00:00",
+  "source_results_sha256": "2726b69b5e0176f8568778b736702ba603dffde7cff6c0f88d1314a1ff2cf5f5",
+  "source_request": {
+    "start": "1926-09-29",
+    "end_exclusive": "2126-09-29",
+    "boundary_scale": "tt",
+    "fixed_utc_offset_hours": 8.0,
+    "all_phases": false
+  },
+  "sample_count": 2473,
+  "excluded_lunations": 1,
+  "selection": "Paired lunations whose full moon is inside the original TT half-open interval.",
+  "probability": "count / 2473 in every bin, no smoothing, no conditional renormalization by lunar day",
+  "bin_closure": "left inclusive, right exclusive; classify before rounding",
+  "east8_rule": "Fixed +8; before 1972 UT1 estimate, valid UTC where available, otherwise existing provisional UTC.",
+  "lunar_day_rule": "Difference of east-eight civil calendar dates (full minus new) + 1; civil day begins at midnight.",
+  "interval": {
+    "bin_minutes": 1,
+    "bin_count": 2464,
+    "zero_count_bins": 966,
+    "minimum_minutes": 20019.09218614648,
+    "maximum_minutes": 22482.44778590814,
+    "mean_minutes": 21260.22008206456
+  },
+  "full_moon": {
+    "bin_hours": 1,
+    "all_bins": 96,
+    "shown_bins": 64,
+    "display_start": "十四 22:00",
+    "display_end_exclusive": "十七 14:00",
+    "earliest_lunar_position_hours_from_day14": 22.385319166666648,
+    "latest_lunar_position_hours_from_day14": 85.51740055555553,
+    "outside_days14_to17": 0,
+    "by_lunar_day": [
+      {
+        "lunar_day": 14,
+        "label": "十四",
+        "count": 13,
+        "probability": 0.005256773150020219
+      },
+      {
+        "lunar_day": 15,
+        "label": "十五",
+        "count": 925,
+        "probability": 0.37403962798220786
+      },
+      {
+        "lunar_day": 16,
+        "label": "十六",
+        "count": 1164,
+        "probability": 0.47068338050950265
+      },
+      {
+        "lunar_day": 17,
+        "label": "十七",
+        "count": 371,
+        "probability": 0.1500202183582693
+      }
+    ],
+    "clock_basis_counts": {
+      "UT1_estimate+08:00": 560,
+      "UTC+08:00": 686,
+      "provisional_UTC+08:00": 1227
+    }
+  },
+  "notes": [
+    "Empirical frequencies in this finite sample, not universal theoretical probabilities.",
+    "Cropped empty hours are absent in this sample, not proven physically impossible for all epochs.",
+    "TT determines elapsed duration; east-eight civil date differences determine lunar day.",
+    "Historical timezone/DST reconstruction, lunar month names and intercalary-month placement are not used."
+  ],
+  "sources": [
+    "https://www.pmo.cas.cn/xwdt2019/kpdt2019/202203/t20220317_6399980.html"
+  ],
+  "matplotlib_version": "3.11.2",
+  "font": "Microsoft YaHei",
+  "analysis_source_sha256": {
+    "analyze.py": "8f92c2ac811e0b01d9ec2fec38ac0441f91d4f25acd5937561168cc4a5748c10",
+    "synodic/distributions.py": "c3a9d3406b3c8c0755f2d85ef2e4e2b0a056d99a34a4fd04dc57cfea93f9e2e9"
+  },
+  "output_sha256": {
+    "01_new_to_full_1minute.png": "9b9f6896c568be430cf4f6ae249fec3a0cfc0f598e245e698d19ac4ba755a670",
+    "01_new_to_full_1minute.svg": "658eb18edae9168d3ccd1b162628a7702d7fcff1a25c7cd128ab0a1fd8628bfb",
+    "02_full_moon_lunar_day_1hour.png": "ae04cd7805065d4ed436aa44b367d1007f2e55e092bfec5232248acc210a3144",
+    "02_full_moon_lunar_day_1hour.svg": "1720a65b1653d840708a2d0c69941663dfec034c520f25f94daf08bda6358ce0",
+    "full_moon_bins_1hour.csv": "e911a8e26667e5cd7e4d86f379db9bfc58b54e7264ccbb5c75d70c0a55836113",
+    "interval_bins_1minute.csv": "edb7803ca915bf58f54f8f8b42bd00999e2fac3575062a6d67bd08377c68eaef",
+    "lunar_day_totals.csv": "53931c17480ad8c16f2ad8cf1a87eb01f9e4e3106b7162f9b4d38d586653f182",
+    "samples.csv": "702b964c291fbba316e89bee5c0c8916457cb3099f49ec53cf254afc2814a5ed"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "explanation_bin_count": 40,
+  "explanation_bin_width_minutes": 73.84068861943888,
+  "displayed_total_area": 1.0,
+  "cdf_endpoints": [
+    0.0,
+    1.0
+  ],
+  "probability_first_minute_from_exact_lower_support": 0.011714581213548236,
+  "probability_minute_centered_on_mu": 0.00021553827450454532,
+  "previous_figure_capped_density_area_approx": 0.9399455017629245,
+  "note": "Previous figure capped the density at 1.65/day and thus did not visibly display all area; this one does."
+}

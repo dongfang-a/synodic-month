@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "program_version": "0.1.0",
+  "created_utc": "2026-09-30T02:05:12.445851+00:00",
+  "request": {
+    "start": "1926-09-29",
+    "end_exclusive": "2126-09-29",
+    "boundary_scale": "tt",
+    "fixed_utc_offset_hours": 8.0,
+    "all_phases": false
+  },
+  "definition": "Geocentric apparent Moon minus Sun ecliptic longitude of date: new=0, full=180 degrees.",
+  "model": "Skyfield observe().apparent(), ecliptic of date, default full IAU 2000A nutation; JPL SPK",
+  "kernel": {
+    "file": "de440s.bsp",
+    "sha256": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2",
+    "size_bytes": 32726016,
+    "segments": "Segments from kernel file 'de440s.bsp':\n  JD 2396752.50 - JD 2506352.50  (1849-12-25 through 2150-01-21)\n      0 -> 1    SOLAR SYSTEM BARYCENTER -> MERCURY BARYCENTER\n      0 -> 2    SOLAR SYSTEM BARYCENTER -> VENUS BARYCENTER\n      0 -> 3    SOLAR SYSTEM BARYCENTER -> EARTH BARYCENTER\n      0 -> 4    SOLAR SYSTEM BARYCENTER -> MARS BARYCENTER\n      0 -> 5    SOLAR SYSTEM BARYCENTER -> JUPITER BARYCENTER\n      0 -> 6    SOLAR SYSTEM BARYCENTER -> SATURN BARYCENTER\n      0 -> 7    SOLAR SYSTEM BARYCENTER -> URANUS BARYCENTER\n      0 -> 8    SOLAR SYSTEM BARYCENTER -> NEPTUNE BARYCENTER\n      0 -> 9    SOLAR SYSTEM BARYCENTER -> PLUTO BARYCENTER\n      0 -> 10   SOLAR SYSTEM BARYCENTER -> SUN\n      3 -> 301  EARTH BARYCENTER -> MOON\n      3 -> 399  EARTH BARYCENTER -> EARTH\n      1 -> 199  MERCURY BARYCENTER -> MERCURY\n      2 -> 299  VENUS BARYCENTER -> VENUS"
+  },
+  "leaps": {
+    "file": "leap-seconds.list",
+    "sha256": "db5a895f16853b03bfc865e8d68f9fc8710ef1740e3400c701cd46a5bbbc3433",
+    "expires_utc_exclusive": "2027-06-28T00:00:00+00:00",
+    "updated_utc": "2026-07-06T07:44:57+00:00",
+    "last_tai_minus_utc_seconds": 37.0
+  },
+  "delta_t": {
+    "source": "Skyfield builtin iers.npz plus its historical/prediction model",
+    "file_sha256": "c7d7536d898dfa9f8cd43e8044ff51e108cc8289675a13fee9822010a1c4935c",
+    "table_tt_jd_range": [
+      2441684.5005113888,
+      2461428.500800741
+    ],
+    "ut1_is_model_dependent": true
+  },
+  "solver": {
+    "method": "2-day scan, vectorized bisection with two-part TT JD, 366-day chunks",
+    "max_requested_bracket_seconds": 0.001,
+    "max_actual_bracket_seconds": 0.0006414316885638982,
+    "max_abs_longitude_residual_arcseconds": 0.00019073352177656488
+  },
+  "counts": {
+    "new": 2474,
+    "full": 2473
+  },
+  "lunations": 2474,
+  "utc_status_counts": {
+    "unavailable_before_1972": 1120,
+    "within_leap_table_validity": 1372,
+    "provisional_constant_tai_minus_utc": 2455
+  },
+  "length_tt_days_min": 29.27435115290001,
+  "length_tt_days_max": 29.8297710154348,
+  "accuracy_notes": [
+    "Numerical bracket width and printed digits are not physical accuracy guarantees.",
+    "TT phase times depend on the ephemeris and apparent-position model; no absolute error bound is asserted.",
+    "UTC fields are empty before 1972 and after leap-table expiry. Future UTC projections have separate provisional fields, holding the last TAI-UTC offset constant.",
+    "UT1 estimates depend on Delta T; historical and future values are not exact civil times.",
+    "Fixed local offset is not a historical timezone or a future civil-time policy prediction.",
+    "Lunations are selected by initial new moon; full/next-new may be outside the requested interval.",
+    "No Chinese calendar dates or fifteen/sixteen probabilities are computed."
+  ],
+  "software": {
+    "skyfield": "1.55",
+    "numpy": "2.5.3",
+    "jplephem": "2.24",
+    "sgp4": "2.27"
+  },
+  "python": "3.12.11",
+  "elapsed_seconds": 21.462588200000027,
+  "sources": [
+    "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440s.bsp",
+    "https://data.iana.org/time-zones/data/leap-seconds.list",
+    "https://aa.usno.navy.mil/faq/moon_phases",
+    "https://ssd.jpl.nasa.gov/doc/de440_de441.html"
+  ],
+  "output_sha256": {
+    "events.csv": "29ea5138af0586395ba0ee910d0f353690b43139f0ae9c0139f9257e531c36a8",
+    "lunations.csv": "e88b7a3d51e736f76f9e3638333bdd2cc575e5749589a8fe9f64ad03be95dfeb",
+    "results.json": "2726b69b5e0176f8568778b736702ba603dffde7cff6c0f88d1314a1ff2cf5f5"
+  }
+}

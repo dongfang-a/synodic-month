@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "events_checked": 4947,
+  "lunations_checked": 2474,
+  "kernel_sha256": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2",
+  "input_results_sha256": "2726b69b5e0176f8568778b736702ba603dffde7cff6c0f88d1314a1ff2cf5f5",
+  "usno_minute_resolution_checks": [
+    {
+      "year": 1926,
+      "events": 49,
+      "comparison_scale": "ut1",
+      "max_abs_difference_seconds": 34.032,
+      "mean_signed_difference_seconds": -6.5167346938775506
+    },
+    {
+      "year": 1980,
+      "events": 50,
+      "comparison_scale": "utc",
+      "max_abs_difference_seconds": 29.653,
+      "mean_signed_difference_seconds": -2.5422200000000004
+    },
+    {
+      "year": 2000,
+      "events": 49,
+      "comparison_scale": "utc",
+      "max_abs_difference_seconds": 30.567,
+      "mean_signed_difference_seconds": -0.2113673469387758
+    },
+    {
+      "year": 2024,
+      "events": 50,
+      "comparison_scale": "utc",
+      "max_abs_difference_seconds": 39.705,
+      "mean_signed_difference_seconds": 9.553519999999999
+    },
+    {
+      "year": 2100,
+      "events": 50,
+      "comparison_scale": "ut1",
+      "max_abs_difference_seconds": 50.891,
+      "mean_signed_difference_seconds": 19.96154
+    }
+  ],
+  "horizons": {
+    "samples": 24,
+    "max_phase_residual_arcseconds": 0.007920000143712969,
+    "max_equivalent_time_difference_seconds": 0.01672456674724347,
+    "interpretation": "Cross-model agreement at sampled epochs, not a physical-error bound."
+  },
+  "numerical_solver": {
+    "method": "2-day scan, vectorized bisection with two-part TT JD, 366-day chunks",
+    "max_requested_bracket_seconds": 0.001,
+    "max_actual_bracket_seconds": 0.0006414316885638982,
+    "max_abs_longitude_residual_arcseconds": 0.00019073352177656488
+  }
+}

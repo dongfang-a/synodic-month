@@ -1,0 +1,154 @@
+{
+  "retrieved_utc": "2026-09-30T02:06:46.559652+00:00",
+  "source": "https://ssd.jpl.nasa.gov/api/horizons.api",
+  "center": "500@399",
+  "quantity": 31,
+  "time_type": "TT",
+  "notes": "Independent DE441/IAU76-80 apparent ecliptic longitude; raw responses retained.",
+  "samples": [
+    {
+      "tt_jd": "2424522.807385563095564",
+      "phase": 3,
+      "moon_longitude_degrees": 196.2513696,
+      "sun_longitude_degrees": 286.2513703
+    },
+    {
+      "tt_jd": "2424529.774258897476713",
+      "phase": 0,
+      "moon_longitude_degrees": 293.352883,
+      "sun_longitude_degrees": 293.3528827
+    },
+    {
+      "tt_jd": "2424536.438236378929616",
+      "phase": 1,
+      "moon_longitude_degrees": 30.1400781,
+      "sun_longitude_degrees": 300.140079
+    },
+    {
+      "tt_jd": "2424544.399691888060854",
+      "phase": 2,
+      "moon_longitude_degrees": 128.2336865,
+      "sun_longitude_degrees": 308.2336863
+    },
+    {
+      "tt_jd": "2444240.8770566237256867",
+      "phase": 2,
+      "moon_longitude_degrees": 101.1174805,
+      "sun_longitude_degrees": 281.1174808
+    },
+    {
+      "tt_jd": "2444248.993304763538056",
+      "phase": 3,
+      "moon_longitude_degrees": 199.3879359,
+      "sun_longitude_degrees": 289.3879366
+    },
+    {
+      "tt_jd": "2444256.389049375740946",
+      "phase": 0,
+      "moon_longitude_degrees": 296.9240862,
+      "sun_longitude_degrees": 296.9240861
+    },
+    {
+      "tt_jd": "2444263.082615287357637",
+      "phase": 1,
+      "moon_longitude_degrees": 33.7378334,
+      "sun_longitude_degrees": 303.7378343
+    },
+    {
+      "tt_jd": "2451550.260211781810624",
+      "phase": 0,
+      "moon_longitude_degrees": 285.731402,
+      "sun_longitude_degrees": 285.731402
+    },
+    {
+      "tt_jd": "2451558.066146302133571",
+      "phase": 1,
+      "moon_longitude_degrees": 23.6875398,
+      "sun_longitude_degrees": 293.6875407
+    },
+    {
+      "tt_jd": "2451564.69549193244136",
+      "phase": 2,
+      "moon_longitude_degrees": 120.4361955,
+      "sun_longitude_degrees": 300.4361953
+    },
+    {
+      "tt_jd": "2451571.831766338389645",
+      "phase": 3,
+      "moon_longitude_degrees": 217.6918496,
+      "sun_longitude_degrees": 307.6918506
+    },
+    {
+      "tt_jd": "2460313.646947384783883",
+      "phase": 3,
+      "moon_longitude_degrees": 193.2452647,
+      "sun_longitude_degrees": 283.2452645
+    },
+    {
+      "tt_jd": "2460320.999001718531254",
+      "phase": 0,
+      "moon_longitude_degrees": 290.7402281,
+      "sun_longitude_degrees": 290.7402275
+    },
+    {
+      "tt_jd": "2460327.662334105882625",
+      "phase": 1,
+      "moon_longitude_degrees": 27.5294947,
+      "sun_longitude_degrees": 297.5294943
+    },
+    {
+      "tt_jd": "2460335.24663813749842",
+      "phase": 2,
+      "moon_longitude_degrees": 125.245488,
+      "sun_longitude_degrees": 305.2454877
+    },
+    {
+      "tt_jd": "2488072.046241590834427",
+      "phase": 3,
+      "moon_longitude_degrees": 193.1980742,
+      "sun_longitude_degrees": 283.1980722
+    },
+    {
+      "tt_jd": "2488079.040919689243509",
+      "phase": 0,
+      "moon_longitude_degrees": 290.3286601,
+      "sun_longitude_degrees": 290.3286584
+    },
+    {
+      "tt_jd": "2488087.025678717549443",
+      "phase": 1,
+      "moon_longitude_degrees": 28.464478,
+      "sun_longitude_degrees": 298.464476
+    },
+    {
+      "tt_jd": "2488094.620040344783263",
+      "phase": 2,
+      "moon_longitude_degrees": 126.1907199,
+      "sun_longitude_degrees": 306.1907183
+    },
+    {
+      "tt_jd": "2497566.3562039391159137",
+      "phase": 1,
+      "moon_longitude_degrees": 11.1644835,
+      "sun_longitude_degrees": 281.1644814
+    },
+    {
+      "tt_jd": "2497573.878468671337007",
+      "phase": 2,
+      "moon_longitude_degrees": 108.8293006,
+      "sun_longitude_degrees": 288.8292985
+    },
+    {
+      "tt_jd": "2497580.583224622731745",
+      "phase": 3,
+      "moon_longitude_degrees": 205.6592021,
+      "sun_longitude_degrees": 295.6591999
+    },
+    {
+      "tt_jd": "2497588.015701907603127",
+      "phase": 0,
+      "moon_longitude_degrees": 303.2284199,
+      "sun_longitude_degrees": 303.228418
+    }
+  ]
+}

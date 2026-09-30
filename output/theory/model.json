@@ -1,0 +1,32 @@
+{
+  "model": "first-order fixed-eccentricity elongation model with uniform anomalistic phase at new moon",
+  "data_samples_used": 0,
+  "mean_synodic_days": 29.530589,
+  "mean_anomalistic_days": 27.55455,
+  "mean_eccentricity": 0.0549,
+  "mu_days": 14.7652945,
+  "amplitude_days": 1.02556511971443,
+  "support_days": [
+    13.739729380285569,
+    15.79085961971443
+  ],
+  "model_elongation_radians": "D(t)=w*t+2*e*(sin(phi+n_a*t)-sin(phi)); w=2pi/S, n_a=2pi/P_a",
+  "linearized_half_cycle": "T=mu-(4e/w)*sin(n_a*mu/2)*cos(phi+n_a*mu/2), mu=pi/w",
+  "density": "1/(pi*sqrt(A^2-(t-mu)^2)) for abs(t-mu)<A, otherwise 0",
+  "cdf": "1/2+arcsin((t-mu)/A)/pi inside support, clipped to 0/1 outside",
+  "one_minute_probability_sum": 1.0,
+  "one_minute_bin_count": 2954,
+  "chart_type": "probability density, not per-bin probability; density viewport limited to 1.65/day",
+  "assumptions": [
+    "Equal weight for anomalistic phases at new moon is an explicit ensemble assumption, not proved here for the real solar system.",
+    "Fixed average orbital parameters and first order in eccentricity only.",
+    "Solar disturbing-force terms such as evection, solar orbital eccentricity, inclination and apparent-position corrections are omitted.",
+    "Apsidal motion is represented only via a fixed mean anomalistic period.",
+    "Not fitted to the existing 200-year dataset; endpoints are not physical error-bounded limits."
+  ],
+  "font": "Microsoft YaHei",
+  "sources": [
+    "https://eclipse.gsfc.nasa.gov/LEsaros/LEperiodicity.html",
+    "https://eclipse.gsfc.nasa.gov/help/moonorbit.html"
+  ]
+}

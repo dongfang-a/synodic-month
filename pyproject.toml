@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synodic-month"
+version = "0.1.0"
+description = "Reproducible geocentric lunar phase times using JPL ephemerides"
+requires-python = ">=3.12"
+dependencies = ["skyfield==1.55", "numpy==2.5.3", "jplephem==2.24", "sgp4==2.27", "certifi==2026.7.22"]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+analysis = ["matplotlib==3.11.2"]
+
+[project.scripts]
+synodic = "synodic.cli:main"
+
+[tool.setuptools]
+packages = ["synodic"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

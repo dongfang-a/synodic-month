@@ -1,0 +1,10 @@
+# Keep source files portable across Windows, Linux, and macOS.
+* text=auto eol=lf
+
+# Preserve exact bytes for data and figures whose SHA-256 is recorded.
+output/** -text
+tests/fixtures/** -text
+data/leap-seconds.list -text
+
+*.png binary
+*.bsp binary
